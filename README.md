@@ -26,9 +26,16 @@ The third objective is to practice our usage of Docker. All the components of th
 ### Acceptance criteria
 
 * You have a GitHub repo with everything needed to build the Docker image.
+** Go to /docker_image/apache-php
 * You do a demo, where you build the image, run a container and access content from a browser.
+** Build: docker build -t res/apache_php .
+** Run: docker run -d -p 9090:80 res/apache_php
+** To see the result: open you browser on your host and enter this as URL: 192.168.42.42:9090
 * You have used a nice looking web template, different from the one shown in the webcast.
+** http://startbootstrap.com/template-overviews/grayscale/
 * You are able to explain what you do in the Dockerfile.
+** Start a terminal into the running container: docker exec -it /bin/bash container_id
+** cd /etc/apache2/
 * You are able to show where the apache config files are located (in a running container).
 * You must have done the demo on May 25th at the latest.
 
