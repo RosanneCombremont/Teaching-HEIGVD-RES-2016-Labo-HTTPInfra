@@ -34,7 +34,7 @@ The third objective is to practice our usage of Docker. All the components of th
 * You have used a nice looking web template, different from the one shown in the webcast.
 	* http://startbootstrap.com/template-overviews/grayscale/
 * You are able to explain what you do in the Dockerfile.
-	* Start a terminal into the running container: docker exec -it /bin/bash container_id
+	* Start a terminal into the running container: docker exec -it container_id /bin/bash 
 	* cd /etc/apache2/
 * You are able to show where the apache config files are located (in a running container).
 * You must have done the demo on May 25th at the latest.
