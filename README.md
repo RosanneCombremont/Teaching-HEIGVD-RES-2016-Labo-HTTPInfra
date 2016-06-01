@@ -50,9 +50,15 @@ The third objective is to practice our usage of Docker. All the components of th
 ### Acceptance criteria
 
 * You have a GitHub repo with everything needed to build the Docker image.
+	* Go to /docker_image/dynamic
 * You do a demo, where you build the image, run a container and access content from a browser.
+	* Go to the repository containing the Dockerfile
+	* Build: docker build -t res/dynamic .
+	* Run: docker run -d -p 9090:3000 res/dynamic
+	* Open your browser and go to the url 192.168.42.42:9090 or 192.168.42.42:9090/surprise
 * You generate dynamic, random content and return a JSON payload to the client.
 * You cannot return the same content as the webcast (you cannot return a list of people).
+	* return a random number of random sentences
 * You don't have to use express.js; if you want, you can use another JavaScript web framework or event another language.
 * You must have done the demo on June 1st at the latest.
 
