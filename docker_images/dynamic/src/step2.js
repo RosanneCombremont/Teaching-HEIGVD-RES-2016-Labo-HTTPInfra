@@ -5,13 +5,14 @@ var srv = express();
 
 srv.get('/',function(req,res)
 {
-	res.send("Welcome on this dynamic site!");
-});
-
-srv.get('/surprise', function(req, res)
-{
+	//res.send("Welcome on this dynamic site!");
 	res.send(surprise());
 });
+
+//srv.get('/surprise', function(req, res)
+//{
+	//res.send(surprise());
+//});
 
 srv.listen(3000, function()
 {
