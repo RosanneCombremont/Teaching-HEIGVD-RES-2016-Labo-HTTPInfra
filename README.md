@@ -110,7 +110,7 @@ The third objective is to practice our usage of Docker. All the components of th
 * You are able to prove that AJAX requests are sent by the browser and you can show the content of th responses.
 	* Examine the web page and go to the tab network
 * You are able to explain why your demo would not work without a reverse proxy (because of a security restriction).
-	* The getJSON makes its call to /api/sentences/ with depends on the proxy config.
+	* The getJSON makes its call to /api/sentences/ which depends on the proxy config.
 * You must have done the demo on June 8th at the latest.
 
 ## Step 5: Dynamic reverse proxy configuration
