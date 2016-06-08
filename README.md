@@ -102,8 +102,15 @@ The third objective is to practice our usage of Docker. All the components of th
 
 * You have a GitHub repo with everything needed to build the various images.
 * You do a complete, end-to-end demonstration: the web page is dynamically updated every few seconds (with the data coming from the dynamic backend).
+	* docker run -d --name apache_static res/apache_php
+	* docker run -d --name apache_dynamic res/dynamic
+	* Now check whether the ip adresses match the rules you wrote
+	* docker run -d -p 8080:80 --name apache_rp res/reverse-proxy
+	* Open a browser and go there: demo.res.ch:8080
 * You are able to prove that AJAX requests are sent by the browser and you can show the content of th responses.
+	* Examine the web page and go to the tab network
 * You are able to explain why your demo would not work without a reverse proxy (because of a security restriction).
+	* The getJSON makes its call to /api/sentences/ with depends on the proxy config.
 * You must have done the demo on June 8th at the latest.
 
 ## Step 5: Dynamic reverse proxy configuration
